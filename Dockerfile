@@ -4,7 +4,7 @@ ARG VERSION
 
 COPY get.sh get.sh
 
-RUN apk add bash \
+RUN apk add bash curl \
     && ./get.sh $VERSION
 
 FROM alpine:3
